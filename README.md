@@ -1,17 +1,26 @@
-# libgdx sbt project
+# libgdx-sbt Project for Desktop Only
 
-Configure and generate a Scala project for [libgdx](http://libgdx.badlogicgames.com/) using [g8](http://github.com/n8han/giter8) and [sbt](http://www.scala-sbt.org/) 0.13.5+.
+This is a template to be used with [g8](http://github.com/n8han/giter8) for configuring and generating a Scala project for [libgdx](http://libgdx.badlogicgames.com/) using [sbt](http://www.scala-sbt.org/) as a build system. This template only generates the core and desktop projects for libgdx. See the [original project](https://github.com/ajhager/libgdx-sbt-project.g8) for a template that generates all supported libgdx project types.
 
 ## Setting up a new project
 
-To use this template, you will need to install g8 first.
-Consult g8's [readme](http://github.com/n8han/giter8#readme) for more information.
+Install [g8](http://github.com/n8han/giter8#readme)
+Then run the following:
 
-Then, in your favorite shell, type the command:
+    $ g8 starfleetcadet75/libgdx-sbt-project
 
-    $ g8 ajhager/libgdx-sbt-project
+You will be prompted to enter some basic information about your project.
 
-After filling in some information about your project, you can start placing your game's source files and assets in core/src/main/scala and android/assets respectively.
+Once that is complete, your project is ready for development. See [here](https://github.com/ajhager/libgdx-sbt-project.g8/wiki/IDE-Plugins) for details about sbt plugins for each editor.
+
+## Current Version Defaults
+
+[sbt](http://www.scala-sbt.org/): 0.13.9
+[scala](http://www.scala-lang.org/): 2.11.7
+[libgdx](http://libgdx.badlogicgames.com/): 1.8.0
+Java: 1.8
+
+During setup, you will be prompted to enter version information. These are the current defaults that it will suggest. To use a newer or older version simply specify it instead.
 
 ## Managing your project
 
@@ -23,18 +32,7 @@ Run the desktop project:
 
     > desktop/run
 
-Package the desktop project into single jar:
+Package the desktop project into a single jar:
 
     > assembly
 
-Create Android package in debug mode:
-  
-    > android:package-debug
-
-Visit [android-sdk-plugin](https://github.com/pfn/android-sdk-plugin) for a more in-depth guide to android configuration and usage.
-
-## Using with popular IDEs
-
-In most cases you will be able to open and edit each sub-project (like common, android or desktop), but you still need to use SBT to build the project.
-
-See [here](https://github.com/ajhager/libgdx-sbt-project.g8/wiki/IDE-Plugins) for details about sbt plugins for each editor.
