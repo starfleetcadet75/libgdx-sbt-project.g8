@@ -15,9 +15,9 @@ Once that is complete, your project is ready for development. See [here](https:/
 
 ## Current Version Defaults
 
-[sbt](http://www.scala-sbt.org/): 0.13.9  
-[scala](http://www.scala-lang.org/): 2.11.7  
-[libgdx](http://libgdx.badlogicgames.com/): 1.8.0  
+[sbt](http://www.scala-sbt.org/): 0.13.11  
+[scala](http://www.scala-lang.org/): 2.11.8  
+[libgdx](http://libgdx.badlogicgames.com/): 1.9.3  
 Java: 1.8  
 
 During setup you will be prompted to enter version information. These are the current defaults that it will suggest. To use a newer or older version simply specify it instead.
@@ -41,7 +41,7 @@ Edit ${PROJECT}/project/build.scala and add to the following:
 
     libraryDependencies ++= Seq(
       "com.badlogicgames.gdx" % "gdx" % libgdxVersion.value,
-      "com.badlogicgames.ashley" % "ashley" % "1.7.0" % "compile",
+      "com.badlogicgames.ashley" % "ashley" % "1.7.2" % "compile",
       Your dependency ...
     )
 
